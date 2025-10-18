@@ -1,0 +1,130 @@
+.imgBlog {
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.imgBlog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgBlog img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog {
+    width: 75%;
+    margin: 90px auto;
+    border-top: 1px solid var(--goldColor);
+}
+
+.blog .blog-text {
+    margin: 50px 0;
+}
+
+.blog .blog-text p {
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 2em;
+}
+
+
+/* Styles for (blog-Header) */
+
+.blog-header {
+    position: relative;
+}
+
+.blog-header h1 {
+    font-size: 2.8rem;
+    color: var(--goldColor);
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.blog-header .blog-autor {
+    width: 85px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-header .blog-autor img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.blog-header .blog-autor p {
+    font-size: .8em;
+    text-decoration: overline;
+}
+
+
+/* Styles for (blog-introduction)  */
+
+.blog-intro {
+    margin: 50px 0;
+}
+
+.blog-cuerpo img {
+    width: 40%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    float: left;
+    margin-right:20px;
+}
+
+.blog .menu-blog {
+    width: 40%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    font-size: 0.95rem;
+    color: var(--baseColor);
+    border-top: 1px solid var(--goldColor);
+    padding-top: 2vh;
+}
+
+.blog-meta i {
+    color: var(--goldColor);
+    margin-right: 0.5rem;
+}
+
+.blog-actions {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3vh;
+}
+
+.blog-actions .btn {
+    text-decoration: none;
+    background-color: var(--goldColor);
+    color: white;
+    padding: 0.8rem 1.4rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.blog-actions .btn:hover {
+    background-color: var(--baseColor);
+    color: var(--goldColor);
+}

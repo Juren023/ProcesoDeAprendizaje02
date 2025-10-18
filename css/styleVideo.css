@@ -1,0 +1,63 @@
+.content h1 {
+    font-size: 3rem;
+    color: var(--goldColor);
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.pantalla {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 1px solid var(--baseColor);
+    border-bottom: 1px solid var(--baseColor);
+}
+
+.pantalla h2 {
+    font-size: 2rem;
+    color: var(--goldColor);
+    margin: 5vh 0;
+}
+
+.pantalla .contenedor-video {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 850px;
+    margin: 1000px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.menu-video {
+    width: 40%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

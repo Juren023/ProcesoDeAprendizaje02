@@ -1,0 +1,328 @@
+:root {
+    --baseColor: #071419;
+    --textColorlight: #faf7ef;
+    --goldColor: #d6b575;
+    --lightOverlay: #f8f6f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "nunito", sans-serif;
+}
+
+#mainContainer {
+    width: 90%;
+    margin: auto;
+}
+
+.header {
+    height: 7vh;
+}
+
+.header .headerHead {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--goldColor);
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 9px 9px rgba(255, 255, 255, 1);
+}
+
+
+
+.header .headerHead img {
+    height: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--baseColor);
+    font-weight: bold;
+    font-size: .9rem;
+    transition: all 0.2s ease;
+}
+
+.menu ul li a:hover {
+    color: var(--goldColor);
+    transition: all 0.2s ease;
+}
+
+.menu ul li a.active {
+    color: var(--goldColor);
+}
+
+.content {
+    width: 95%;
+    min-height: 90vh;
+    margin: auto;
+    padding: 5vh 5%;
+    background-color: var(--lightOverlay);
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--baseColor);
+}
+
+.text-initial {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style for section  (presentation) */
+#presentation {
+    width: 100%;
+    height: 80vh;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#presentation img {
+    width: 100%;
+    height: 100%;
+}
+
+.txtPresentation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: clamp(50px, 10vw, 250px);
+    background-color: rgba(7, 20, 25, 0.5);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--textColorlight);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.txtPresentation h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.txtPresentation .menu ul {
+    gap: 50px;
+}
+
+.txtPresentation .menu ul li a {
+    font-size: 1.2rem;
+    color: var(--goldColor);
+}
+
+.txtPresentation .menu ul li a:hover {
+    color: var(--textColorlight);
+}
+
+.txtPresentation .menu ul li a.active {
+    color: var(--textColorlight);
+}
+
+/* Styles for (sabores) Section */
+
+.sabores {
+    margin: 2.5vh 0;
+    padding: 4vh 5%;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.sabores h2 {
+    font-size: 2rem;
+    color: var(--goldColor);
+    margin-bottom: 1vh;
+}
+
+.sabores p {
+    font-size: 1rem;
+    color: var(--baseColor);
+    margin-bottom: 4vh;
+}
+
+.sabores-flex {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.sabor-card {
+    width: 250px;
+    padding: 20px 20px 0;
+    background-color: white;
+    border: 1px solid var(--goldColor);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.sabor-card:hover {
+    transform: scale(102%);
+}
+
+.sabor-card .cardText {
+    margin-top: 20px;
+}
+
+.sabor-card h3 {
+    font-size: 1.2rem;
+    color: var(--goldColor);
+    margin-bottom: 0.5vh;
+}
+
+.sabor-card p {
+    font-size: 0.95rem;
+    color: var(--baseColor);
+}
+
+.sabor-card img {
+    width: 100%;
+    height: 60%;
+}
+
+
+/* Styles for (explora) section */
+
+.explora {
+    padding: 4vh 5%;
+    text-align: center;
+}
+
+.explora h2 {
+    font-size: 2rem;
+    color: var(--goldColor);
+    margin-bottom: 1vh;
+}
+
+.explora p {
+    font-size: 1rem;
+    color: var(--baseColor);
+    margin-bottom: 3vh;
+}
+
+.explora-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.explora-links a {
+    text-decoration: none;
+    color: var(--baseColor);
+    font-size: 1rem;
+    border: 1px solid var(--goldColor);
+    padding: 0.8rem 1.2rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.explora-links a:hover {
+    background-color: var(--goldColor);
+    color: white;
+}
+
+
+/* Styles for (Destacado) section */
+
+.destacado-blog {
+    padding: 4vh 5%;
+    text-align: center;
+}
+
+.destacado-blog h2 {
+    font-size: 2rem;
+    color: var(--goldColor);
+    margin-bottom: 1vh;
+}
+
+.destacado-blog article {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2vh;
+    border: 1px solid var(--goldColor);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.destacado-blog h3 {
+    font-size: 1.3rem;
+    color: var(--baseColor);
+    margin-bottom: 1vh;
+}
+
+.destacado-blog p {
+    font-size: 1rem;
+    color: var(--baseColor);
+    margin-bottom: 2vh;
+}
+
+.destacado-blog a {
+    text-decoration: none;
+    color: var(--goldColor);
+    font-weight: bold;
+}
+
+
+/* Style for footer */
+
+.footer {
+    padding: 40px;
+    background-color: var(--goldColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .footer-card {
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-card img {
+    width: 40%;
+}
+
+.footer .footer-card h3 {
+    width: 90px;
+}
+
+.footer .footer-card .line-separcion {
+    height: 120px;
+    margin: 0 10px;
+    border: 1px solid white;
+}
+
+.footer .footer-card .footer-card-txt p {
+    font-size: .7em;
+}
+
+.footer .menu ul li a:hover {
+    color: var(--textColorlight);
+}
