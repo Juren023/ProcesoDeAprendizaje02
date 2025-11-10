@@ -1,0 +1,94 @@
+@media (max-width: 900px) {
+
+    .header .headerHead {
+        padding: 10;
+        left: 0;
+        right: 0;
+    }
+
+    /* For menu */
+    .header .headerHead .menu {
+        width: 100%;
+        position: absolute;
+        top: -40vh;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: top 0.5s ease, opacity 1s ease;
+        z-index: 1;
+    }
+
+
+    .header .headerHead .menu.activeToggle {
+        top: 7vh;
+    }
+
+
+    .header .headerHead .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        background-color: var(--lightOverlay);
+    }
+
+    .header .headerHead .menu ul li {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid var(--goldColor);
+    }
+
+    .header .headerHead .active {
+        background-color: var(--goldColor);
+        color: white;
+    }
+
+    #toggleBtn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: var(--baseColor);
+    }
+
+    /* For index */
+    .content {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    #presentation {
+        height: 50vh;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #presentation .menu {
+        display: none;
+    }
+
+    /* For Nosotros */
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sobreNosotros-img,
+    .story-img {
+        border-radius: 10%;
+    }
+
+    /* For Contacto */
+    .contact-form {
+        width: 90%;
+        padding: 10px;
+    }
+
+}

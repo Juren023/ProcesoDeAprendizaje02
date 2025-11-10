@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-    <link rel="shortcut icon" href="img/logo/iconLogoMistureOscuro.png" type="image/x-icon"> 
-      
+    <link rel="shortcut icon" href="img/logo/iconLogoMistureOscuro.png" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund+Guides&display=swap" rel="stylesheet">
@@ -15,20 +17,24 @@
 
     <title>Misture</title>
 </head>
+
 <body>
-    
+
     <div id="mainContainer">
         <header class="header">
             <div class="headerHead">
                 <img src="img/logo/logoMistureClaro.png" alt="logo Misture">
                 <nav class="menu">
                     <ul>
-                        <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i><span> </span>Inicio</a></li>
+                        <li class="active"><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                        <li><a href="nosotros.html"><i class="fa-solid fa-user"></i> Nosotros</a></li>
                         <li><a href="blog.html"><i class="fa-solid fa-pencil"></i> Blog</a></li>
                         <li><a href="galeria.html"><i class="fa-solid fa-image"></i> Galeria</a></li>
                         <li><a href="video.html"><i class="fa-solid fa-video"></i> Videos</a></li>
+                        <li><a href="contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
                     </ul>
                 </nav>
+                <button id="toggleBtn"><i class="fa-solid fa-bars"></i></button>
             </div>
         </header>
 
@@ -49,13 +55,17 @@
 
                     <div class="menu ">
                         <ul>
-                            <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.instagram.com"target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="https://www.x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://www.facebook.com" target="_blank"><i
+                                        class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.youtube.com" target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a></li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </section>
 
@@ -89,10 +99,11 @@
             </section>
 
             <section class="destacado-blog">
-            <h2>Desde el blog</h2>
+                <h2>Desde el blog</h2>
                 <article>
                     <h3>El placer del café</h3>
-                    <p>Una taza, una pausa, una historia que se derrite entre aromas tostados y silencios compartidos.</p>
+                    <p>Una taza, una pausa, una historia que se derrite entre aromas tostados y silencios compartidos.
+                    </p>
                     <a href="blog.html">Leer más</a>
                 </article>
             </section>
@@ -108,7 +119,7 @@
             </section>
 
         </div>
-            
+
     </div>
 
     <footer class="footer">
@@ -130,8 +141,10 @@
             <div class="line-separcion"></div>
             <div class="menu ">
                 <ul>
-                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com"target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
                     <li><a href="https://www.x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
                     <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
                 </ul>
@@ -148,5 +161,8 @@
         </div>
     </footer>
 
+    <script src="app.js"></script>
+
 </body>
+
 </html>

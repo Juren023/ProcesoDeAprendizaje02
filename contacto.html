@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleBlog.css">
     <link rel="stylesheet" href="css/styleVideo.css">
+    <link rel="stylesheet" href="css/styleGaleria.css">
+    <link rel="stylesheet" href="css/styleContacto.css">
     <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="shortcut icon" href="img/logo/iconLogoMistureOscuro.png" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund+Guides&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Misture - Videos</title>
+
+
+    <title>Misture</title>
 </head>
 
 <body>
@@ -29,9 +34,10 @@
                         <li><a href="nosotros.html"><i class="fa-solid fa-user"></i> Nosotros</a></li>
                         <li><a href="blog.html"><i class="fa-solid fa-pencil"></i> Blog</a></li>
                         <li><a href="galeria.html"><i class="fa-solid fa-image"></i> Galeria</a></li>
-                        <li class="active"><a href="video.html" class="active"><i class="fa-solid fa-video"></i>
-                                Videos</a></li>
-                        <li><a href="contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+                        <li><a href="video.html"><i class="fa-solid fa-video"></i> Videos</a></li>
+                        <li class="active"><a href="contacto.html" class="active"> <i
+                                    class="fa-solid fa-envelope"></i></i>
+                                Contacto</a></li>
                     </ul>
                 </nav>
                 <button id="toggleBtn"><i class="fa-solid fa-bars"></i></button>
@@ -39,46 +45,50 @@
         </header>
 
         <div class="content">
-            <div class="text-initial">
-                <h1>---:- Fragmentos dulces -:---</h1>
-                <p>“Instantes que respiran azúcar y sombra”</p>
+            <h1>Contactanos</h1>
+
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-            <section class="pantalla">
-                <article>
-                    <h2>El arte del postre en plato - Por Miquel Guarro</h2>
-                    <div class="contenedor-video">
-                        <iframe class="video"
-                            src="https://www.youtube-nocookie.com/embed/iLbyqr6ASiY?si=ejUmTwgF9bFnh19t" frameborder="0"
-                            allow="autoplay; fullscreen" allowfullscreen></iframe>
-                    </div>
-                </article>
 
-                <article>
-                    <h2>Postres saludables - Por Emprendedor Point</h2>
-                    <div class="contenedor-video">
-                        <iframe class="video"
-                            src="https://player.vimeo.com/video/703079642?badge=0&autopause=0&player_id=0&app_id=58479"
-                            frameborder="0" allow="autoplay; fullscreen" controls allowfullscreen></iframe>
-                    </div>
-                </article>
-            </section>
+            <div class="contactos">
+                <table>
+                    <tr>
+                        <td><i class="fa-solid fa-phone"></i></td>
+                        <td>+51 999 999 999</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-envelope"></i></td>
+                        <td>example@gmail.com </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-location-dot"></i></td>
+                        <td>AV Los Heroes MZ D lt 03 - Lima- Lima</td>
+                    </tr>
 
-            <div class="menu-video">
-                <div class="menu ">
-                    <ul>
-                        <li><a href="https://www.facebook.com" target="_blank"><i
-                                    class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.instagram.com" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://www.x.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                        </li>
-                    </ul>
-                </div>
+
+                </table>
+            </div>
+
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3280.820622186393!2d-76.94693818162314!3d-12.072720360249399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1762739074972!5m2!1ses!2spe"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </div>
-
 
     </div>
 
